@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTISTRY Skincare</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">ARTISTRY</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Product Section -->
+<section class="product-section" id="our-products">
+  <h2>ARTISTRY SKIN NUTRITION </h2>
+  <div class="productimg">
+    <img src="images/artistry7.png" alt="trace1">
+
+  <div class="product-grid">
+    <!-- ARTISTRY SKIN NUTRITION Renewing -->
+    <div class="product-card" onclick="showProductDetail('teen-product1')">
+      <img src="images/renewing.jpeg" alt="Renewing Product">
+      <h3>ARTISTRY SKIN NUTRITION Renewing</h3>
+      <h3>ABO/APC :RM 532</h3>
+      <h3>RETAIL PRICE:RM 665</h3>
+    </div>
+
+    <!-- ARTISTRY SKIN NUTRITION Balancing -->
+    <div class="product-card" onclick="showProductDetail('teen-product2')">
+      <img src="images/balance.jpeg" alt="Balancing Product">
+      <h3>ARTISTRY SKIN NUTRITION Balancing</h3>
+      <h3>ABO/APC :RM 320.50</h3>
+      <h3>RETAIL PRICE:RM 362.50</h3>
+    </div>
+
+    <!-- ARTISTRY SKIN NUTRITION Hydrating -->
+    <div class="product-card" onclick="showProductDetail('adult-product1')">
+      <img src="images/hydrating.jpeg.jpeg" alt="Hydrating Product">
+      <h3>ARTISTRY SKIN NUTRITION Hydrating</h3>
+      <h3>ABO/APC :RM 290</h3>
+      <h3>RETAIL PRICE:RM 400</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Mask Section -->
+<section class="mask-section" id="MASK">
+  <h2>Explore Our Masks</h2>
+  <div class="productimg">
+    <img src="images/artistry4.jpg" alt="trace1">
+
+  <div class="mask-grid">
+    <!--Polishing Mask -->
+    <div class="mask-card" onclick="showProductDetail('mask1')">
+      <h3>Polishing Mask</h3> 
+      <h3>ABO/APC :RM 126.50 </h3>
+      <h3>RETAIL PRICE:RM 158.50</h3>
+      <img src="images/polishing.jpg" alt="Polishing Mask">
+    </div>
+
+    <!-- Brightening Mask -->
+    <div class="mask-card" onclick="showProductDetail('mask2')">
+      <h3>Brightening Mask</h3>
+      <h3>ABO/APC :RM 148.50 </h3>
+      <h3>RETAIL PRICE:RM 186</h3>
+      <img src="images/Brightening.jpg" alt="Brightening Mask">
+    </div>
+
+    <!-- Purifying Mask -->
+    <div class="mask-card" onclick="showProductDetail('mask3')">
+      <h3>Purifying Mask</h3>
+      <h3>ABO/APC :RM 126.50 </h3>
+      <h3>RETAIL PRICE:RM 158.50</h3>
+      <img src="images/purifiying.jpg" alt="Purifying Mask">
+    </div>
+
+    <!-- Hydrating Mask -->
+    <div class="mask-card" onclick="showProductDetail('mask4')">
+      <h3>Hydrating Mask</h3>
+      <h3>ABO/APC :RM 148.50 </h3>
+      <h3>RETAIL PRICE:RM 186</h3>
+      <img src="images/hydratingmask.jpg" alt="Hydrating Mask">
+    </div>
+
+    <!-- Firming Mask -->
+    <div class="mask-card" onclick="showProductDetail('mask5')">
+      <h3>Firming Mask</h3> 
+      <h3>ABO/APC :RM 148.50</h3>
+      <h3>RETAIL PRICE:RM 186</h3>
+      <img src="images/Firming.jpg" alt="Firming Mask">
+    </div>
+  </div>
+</section>
+
+<!-- Skin Studio Section -->
+<section class="studio-section ">
+  <h2>ARTISTRY STUDIO SKIN </h2>
+  <div class="productimg">
+    <img src="images/artistrystu.png" alt="trace1">
+
+  <div class="product-grid">
+    <!-- Acne Treatment + Clearing Gel -->
+    <div class="product-card" onclick="showProductDetail('done zit')">
+      <img src="images/ARTISTRY STUDIO SKIN Done with Zits (Acne Treatment + Clearing Gel).jpeg" alt="Acne Treatment Gel">
+      <h3>ARTISTRY STUDIO SKIN Done with Zits</h3>
+      <h3>ABO/APC :RM 84</h3>
+      <h3>RETAIL PRICE:RM 105</h3>
+    </div>
+
+    <!-- Cooling Eye Serum -->
+    <div class="product-card" onclick="showProductDetail('eye cream')">
+      <img src="images/ARTISTRY STUDIO SKIN Eye Look Energised (Highlighting + Cooling Eye Serum).jpeg" alt="Cooling Eye Serum">
+      <h3>ARTISTRY STUDIO SKIN Eye Look Energised</h3>
+      <h3>ABO/APC :RM 65 </h3>
+      <h3>RETAIL PRICE:RM 81.30</h3>
+    </div>
+
+    <!-- Cleanser + Exfoliator -->
+    <div class="product-card" onclick="showProductDetail('washer')">
+      <img src="images/ARTISTRY STUDIO SKIN Glow Boss (Cleanser + Exfoliator).jpeg" alt="Cleanser Exfoliator">
+      <h3>ARTISTRY STUDIO SKIN Glow Boss</h3>
+      <h3>ABO/APC :RM 66 </h3>
+      <h3>RETAIL PRICE:RM 82.50</h3>
+    </div>
+
+    <!-- Hydration + Antioxidant Boost Moisturiser -->
+    <div class="product-card" onclick="showProductDetail('moisturizer')">
+      <img src="images/ARTISTRY STUDIO SKIN My Main Squeeze (Hydration + Antioxidant Boost Moisturiser).jpeg" alt="Moisturiser">
+      <h3>ARTISTRY STUDIO SKIN My Main Squeeze</h3>
+      <h3>ABO/APC :RM 91</h3>
+      <h3>RETAIL PRICE:RM 113.80</h3>
+    </div>
+
+    <!-- Glow + Moisture Ampoule -->
+    <div class="product-card" onclick="showProductDetail('serum')">
+      <img src="images/ARTISTRY STUDIO SKIN On the Go Glow (Glow + Moisture Ampoule).jpeg" alt="Glow Ampoule">
+      <h3>ARTISTRY STUDIO SKIN On the Go Glow</h3>
+      <h3>ABO/APC :RM 110 </h3>
+      <h3>RETAIL PRICE:RM 137.50</h3>
+    </div>
+
+    <!-- Anti-Blemish Toner + Pore Refresher -->
+    <div class="product-card" onclick="showProductDetail('toner')">
+      <img src="images/ARTISTRY STUDIO SKIN Rosé All Day (Anti-Blemish Toner + Pore Refresher).jpeg" alt="Toner + Pore Refresher">
+      <h3>ARTISTRY STUDIO SKIN Rosé All Day</h3>
+      <h3>ABO/APC :RM 72</h3>
+      <h3>RETAIL PRICE:RM 90</h3>
+    </div>
+  </div>
+</section>
+
+    <section class="intensive-section">
+      <h2>ARTISTRY INTENSIVE SKINCARE </h2>
+      <div class="productimg">
+        <img src="images/artistry5.jpg" alt="trace1">
+      <div class="product-grid">
+        <!-- Blooming Sleeping Mask-->
+        <div class="product-card" onclick="showProductDetail('SLEEPING MASK')">
+          <h3>ARTISTRY INTENSIVE SKINCARE Blooming Sleeping Mask</h3>
+          <p>ABO/APC: RM 336</p>
+          <p>Retail Price: RM 419.50</p>
+          <img src="images/ARTISTRY INTENSIVE SKINCARE Blooming Sleeping Mask.jpeg" alt="Example Product 1">
+        </div>
+    
+        <!-- Anti-Wrinkle Firming Serum -->
+        <div class="product-card" onclick="showProductDetail('FIRMING SERUM')">
+          <h3>ARTISTRY INTENSIVE SKINCARE Anti-Wrinkle Firming Serum</h3>
+          <p>ABO/APC: RM 378</p>
+          <p>Retail Price: RM 472.50</p>
+          <img src="images/ARTISTRY INTENSIVE SKINCARE Anti-Wrinkle Firming Serum.jpg" alt="Example Product 2">
+        </div>
+
+        <!-- 14 Night Reset Program  -->
+        <div class="product-card" onclick="showProductDetail('NIGHT RESET')">
+          <h3>ARTISTRY INTENSIVE SKINCARE 14 Night Reset Program -1.5ml x14 vials</h3>
+          <p>ABO/APC: RM 896.50</p>
+          <p>Retail Price: RM 1,120.50</p>
+          <img src="images/ARTISTRY INTENSIVE SKINCARE 14 Night.jpeg" alt="Example Product 2">
+        </div>
+      </div>
+    </section>
+
+  <!-- Product Details Section -->
+  <div id="product-detail" class="product-detail hidden">
+    <button class="close-btn" onclick="closeProductDetail()">X</button>
+    <h3 id="detail-title"></h3>
+    <p id="detail-description"></p>
+  </div>
+
+  <section class="labs-section" id="our-products">
+    <h2>ARTISTRY LABS </h2>
+    <div class="productimg">
+      <img src="images/artistry3.jpg" alt="trace1">
+  
+    <div class="product-grid">
+      <!-- ARTISTRY LABS Retexturizing System -->
+      <div class="product-card" onclick="showProductDetail('Retexturizing')">
+        <img src="images/ARTISTRY LABS Retexturizing System.jpg">
+        <h3>ARTISTRY LABS Retexturizing System</h3>
+        <h3>ABO/APC :RM 780</h3>
+        <h3>RETAIL PRICE:RM 975</h3>
+      </div>
+  
+
+    </div>
+  </section>
+
+  <section class="men-section" id="MASK">
+    <h2>ARTISTRY MEN</h2>
+    <div class="productimg">
+      <img src="images/artistrymen.jpg" alt="trace1">
+  
+    <div class="mask-grid">
+      <!--ARTISTRY MEN Serum Concentrate -->
+      <div class="mask-card" onclick="showProductDetail('Serum Concentrate')">
+        <h3>ARTISTRY MEN Serum Concentrate</h3> 
+        <h3>ABO/APC :RM 178.50 </h3>
+        <h3>RETAIL PRICE:RM 223</h3>
+        <img src="images/ARTISTRY MEN Serum Concentrate.jpg">
+      </div>
+  
+      <!-- ARTISTRY MEN Balancing Hydrator -->
+      <div class="mask-card" onclick="showProductDetail('Balancing Hydrator')">
+        <h3>ARTISTRY MEN Balancing Hydrator</h3>
+        <h3>ABO/APC :RM 125.50 </h3>
+        <h3>RETAIL PRICE:RM 157</h3>
+        <img src="images/ARTISTRY MEN Balancing Hydrator.jpg">
+      </div>
+  
+      <!-- ARTISTRY MEN Enviving Emulsion -->
+      <div class="mask-card" onclick="showProductDetail('Enviving Emulsion')">
+        <h3>ARTISTRY MEN Enviving Emulsion</h3>
+        <h3>ABO/APC :RM 141</h3>
+        <h3>RETAIL PRICE:RM 176</h3>
+        <img src="images/ARTISTRY MEN Enviving Emulsion.jpg">
+      </div>
+  
+      <!--ARTISTRY MEN Gentle Face Wash-->
+      <div class="mask-card" onclick="showProductDetail('Gentle Face Wash')">
+        <h3>ARTISTRY MEN Gentle Face Wash</h3>
+        <h3>ABO/APC :RM 98 </h3>
+        <h3>RETAIL PRICE:RM 123</h3>
+        <img src="images/ARTISTRY MEN Gentle Face Wash.JPG" alt="Hydrating Mask">
+      </div>
+    </div>
+  </section>
+
+  <section class="supremelx-section" id="our-products">
+    <h2>ARTISTRY SUPREME LX</h2>
+    <div class="productimg">
+      <img src="images/arstistrylx.png" alt="trace1">
+  
+    <div class="product-grid">
+      <!-- ARTISTRY SUPREME LX Regenerating Eye Cream -->
+      <div class="product-card" onclick="showProductDetail('ReGENERATING')">
+        <img src="images/ARTISTRY SUPREME LX Regenerating Eye Cream.jpg">
+        <h3>ARTISTRY SUPREME LX Regenerating Eye Cream</h3>
+        <h3>ABO/APC :RM 450</h3>
+        <h3>RETAIL PRICE:RM 563</h3>
+      </div>
+  
+      <!--ARTISTRY SUPREME LX Regenerating Cream  -->
+      <div class="product-card" onclick="showProductDetail('CREAM')">
+        <img src="images/ARTISTRY SUPREME LX Regenerating Cream.jpeg">
+        <h3>ARTISTRY SUPREME LX Regenerating Cream </h3>
+        <h3>ABO/APC :RM 1,044</h3>
+        <h3>RETAIL PRICE:RM 1,305</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Witness a transformation on your skin, unlocking clean and revitalised beauty. Explore ARTISTRY’s skin care and beauty products today to elevate your transformation!</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="products.html">PRODUCTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="history.html">HISTORY</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/amwaymalaysia/" target="_blank">Facebook</a>
+                <a href="https://x.com/amway?lang=en" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/amwaymy/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 ARTISTRY. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  const products = {
+    'teen-product1': {
+      title: 'Skin Types: Suitable for mature dry skin.',
+      description: `
+        Cleanse, tone, and moisturise your way to youthful-looking skin that’s beautifully renewed and visibly healthy with this basic daily skincare set. Get this rejuvenating skincare bundle at 5% off.
+        
+        Consists of:
+        - Renewing Foaming Cleanser (125ml)
+        - Renewing Softening Toner (200ml)
+        - Renewing Reactivation Cream (50ml)
+      `,
+    },
+    'teen-product2': {
+      title: 'Skin Types: Oily, Normal to Oily',
+      description: `
+        Cleanse, tone, and moisturise your way to fresh matte skin that’s beautifully balanced and visibly healthy with this basic daily skincare set. Get this refreshing skincare bundle at 5% off.
+        
+        Consists of:
+        - Balancing Jelly Cleanser (125ml)
+        - Balancing Fresh Shake Toner (200ml)
+        - Balancing Matte Gel Lotion (50ml)
+      `,
+    },
+    'adult-product1': {
+      title: 'Skin Types: Dry, Normal to Dry',
+      description: `
+        Cleanse, tone, and moisturise your way to hydrated, supple skin that’s visibly healthy with this basic daily skincare set. Get this hydrating skincare bundle at 5% off.
+        
+        Consists of:
+        - Hydrating Jelly Cleanser (125ml)
+        - Hydrating Fresh Shake Toner (200ml)
+        - Hydrating Matte Gel Lotion (50ml)
+      `,
+    },
+    'mask1': {
+      title: 'Polishing Mask',
+      description: 'Highly effective in polishing away dead and dull skin cells that led to uneven texture. Leave your skin feeling soft and nourished after every use.',
+    },
+    'mask2': {
+      title: 'Brightening Mask',
+      description: 'A glossy white formula that reflects the action of the mask as it starts brightening your skin on contact. Allow your skin to look wide awake,luminous with new vitality and achieve an even, translucent skin tone.',
+    },
+    'mask3': {
+      title: 'Purifying Mask',
+      description: 'A dense clay mask that deeply cleanses your skin and pores, drawing out all impurities and environmental pollutants. Leave your pores looking less visible with clear-looking skin!',
+    },
+    'mask4': {
+      title: 'Hydrating Mask',
+      description: 'Formulated with a soft, smooth soufflé cream formula that floats over skin, infusing deep and lasting moisture on contact. Leave your skin feeling deliciously replenished and comfortably conditioned!',
+    },
+    'mask5': {
+      title: 'Firming Mask ',
+      description: ' formulated with an instant-transforming formula that goes from a cool, red translucent gel in the jar to a creamy, white and cushioning emulsion on your skin. Topped with a delightful warming sensation.Achieve firmer, revitalised, nourished and renewed skin that comes with a sense of being invigorated again.',
+    },
+
+    // Skin Studio Products
+'done zit': {
+  title: 'ARTISTRY STUDIO SKIN Done with Zits (Acne Treatment + Clearing Gel)',
+  description: `
+    TEXTURE :
+Clear, thin, light pink liquid
+
+FRAGRANCE :
+Rose Extract - Delicate scent from rose blossoms
+
+MORE REASONS TO LOVE :
+Helps to reduce redness and fade acne marks that are left behind
+Dries up persistent breakouts, but not your face
+Works hard to help keep future breakouts at bay
+
+  `,
+},
+'eye cream': {
+  title: 'ARTISTRY STUDIO SKIN Eye Look Energised (Highlighting + Cooling Eye Serum)',
+  description: `
+    TEXTURE :
+Shimmery, rose gold liquid serum
+
+FRAGRANCE :
+Fragrance-free
+
+MORE REASONS TO LOVE :
+Brightens, cools and depuffs skin around the eye
+Energises and refreshes the appearance of your eyes
+Use on cheekbones, cupid’s bow, nose for a highlighting effect
+Easy on-the-go rollerball applicator
+  `,
+},
+'washer': {
+  title: 'ARTISTRY STUDIO SKIN Glow Boss (Cleanser + Exfoliator)',
+  description: `
+    TEXTURE :
+Bright orange gel with exfoliating grains
+
+FRAGRANCE 
+A zest of tangerine and spritz of red fruit juice combined with a splash of muguet (lily of the valley) and white musk
+
+MORE REASONS TO LOVE :
+Removes impurities like dirt, debris, oil and makeup residue
+Deeply cleanses and unclogs pores
+Improves skin smoothness, evens tone and texture
+Controls oil and reduces shine
+
+  `,
+},
+'moisturizer': {
+  title: 'ARTISTRY STUDIO SKIN My Main Squeeze (Hydration + Antioxidant Boost Moisturiser)',
+  description: `
+    TEXTURE :
+Acai Sherbet (soft purple) cream
+
+FRAGRANCE :
+Exotic Berry
+
+MORE REASONS TO LOVE :
+Lush, lightweight gel cream with vitamins and antioxidants amplifies your radiance and helps provide a youthful look
+Moisturising botanicals deliver an invigorating burst of soothing hydration
+Tropical fruit extracts infuse skin with antioxidants, protecting skin against environmental stress
+Doubles as a makeup primer, creating a smooth & hyrated canvas
+  `,
+},
+'serum': {
+  title: 'ARTISTRY STUDIO SKIN On the Go Glow (Glow + Moisture Ampoule)',
+  description: `
+TEXTURE :
+Pale-yellow capsule in clear serum gel
+
+FRAGRANCE :
+Fragrance-free
+
+MORE REASONS TO LOVE :
+Leaves skin feeling soft, moisturised and lifted
+Supercharged lightweight gel with fresh burst of hydration and glow
+Soothes and energises stressed out skin
+Innovative technology introduces 3-D Care with ARTISTRY’s first multi-benefit ampoule serum
+  `,
+},
+'toner': {
+  title: 'ARTISTRY STUDIO SKIN Rosé All Day (Anti-Blemish Toner + Pore Refresher)',
+  description: `
+    TEXTURE :
+Clear, thin, light pink liquid
+
+FRAGRANCE :
+Rose Extract - Delicate scent from rose blossoms
+
+MORE REASONS TO LOVE :
+1% salicylic acid clears up blemishes and prevents new ones without over drying
+Helps control blackheads
+Leaves skin and pores feeling refreshed
+Fast drying, non-sticky, water-based formula
+  `,
+},
+
+// INTENSIVE SKINCARE
+'SLEEPING MASK': {
+  title: 'ARTISTRY INTENSIVE SKINCARE Blooming Sleeping Mask ',
+  description: `
+   This advanced overnight treatment mask uses cutting-edge technologies and powerful ingredients to rejuvenate mature skin and prevent and delay DNA damage to maintain a youthful look.
+
+  `,
+},
+'FIRMING SERUM': {
+  title: 'ARTISTRY INTENSIVE SKINCARE Anti-Wrinkle Firming Serum',
+  description: `
+    ARTISTRY INTENSIVE SKINCARE Anti-Wrinkle Firming Serum effectively boosts the production of collagen overnight to achieve a younger look.
+  `,
+},
+'NIGHT RESET': {
+  title: 'ARTISTRY INTENSIVE SKINCARE 14 Night Reset Program - 1.5ml x14 vials',
+  description: `
+    Enjoy renewed skin in just 2 weeks. Get the benefits of aesthetic laser treatments from the comfort of your home minus the downtime. Wake up to beautiful skin and witness improvement on hydration, even skin tone, brightening, smoothness, firmness, reduced fine lines and wrinkles.
+
+  `,
+},
+
+// ARTISTRY LAB
+'Retexturizing': {
+  title: 'ARTISTRY LABS Retexturizing System ',
+  description: `
+  Inspired by professional treatments and powered by potent plant-derived ingredients, this powerful at-home treatment is clinically proven to resurface skin and boost natural skin cell renewal for healthier, smoother skin in just 4 weeks!
+
+  `,
+},
+
+//ARTISTRY MEN
+'Serum Concentrate': {
+      title: 'ARTISTRY MEN Serum Concentrate',
+      description: 'ARTISTRY Men Serum Concentrate is a highly advanced serum that rejuvenates the skin for a noticeably more youthful look. It helps restore firmness and minimises the appearance of fine liness.'
+    },
+    'Balancing Hydrator': {
+      title: 'ARTISTRY MEN Balancing Hydrator',
+      description: 'ARTISTRY Men Balancing Hydrator is a lightweight toner that can help balance the condition of men’s post-shave skin and maintain the skin’s natural protective barrier. It may also be used as a pre-shave when using an electric shaver.',
+    },
+    'Enviving Emulsion': {
+      title: 'ARTISTRY MEN Enviving Emulsion',
+      description: 'ARTISTRY Men Enviving Emulsion is a light lotion formulated to help protect men’s skin from moisture loss and dryness. It also has the power of long-lasting moisturisation to revive the healthy look of men’s skin.',
+    },
+    'Gentle Face Wash': {
+      title: 'ARTISTRY MEN Gentle Face Wash',
+      description: 'Specially developed for men’s skin, ARTISTRY Men Gentle Face Wash is an effective cleanser which removes traces of oil and dirt while maintaining your skin’s optimal moisture.',
+    },
+   
+// ARTISTRY SUPREME LX
+'ReGENERATING': {
+  title: 'ARTISTRY SUPREME LX Regenerating Eye Cream ',
+  description: ` 
+ARTISTRY SUPREME LX Regenerating Eye Cream is a rich emollient cream that offers 360 degrees of comprehensive anti-aging benefits for the entire eye area. Achieve a youthful look and more radiant eyes with SUPREME LX Regenerating eye cream.
+
+  `,
+},
+'CREAM': {
+  title: 'ARTISTRY SUPREME LX Regenerating Cream ',
+  description: `
+   ARTISTRY SUPREME LX Regenerating Cream is a technologically advanced anti-aging face cream that offers luxurious revitalisation for skin that acts up to 15 years younger.
+  `,
+},
+
+
+  };
+
+  function showProductDetail(productKey) {
+    const detailSection = document.getElementById('product-detail');
+    const title = document.getElementById('detail-title');
+    const description = document.getElementById('detail-description');
+
+    title.textContent = products[productKey].title;
+    description.innerHTML = products[productKey].description.replace(/\n/g, '<br>');
+
+    detailSection.classList.remove('hidden');
+  }
+
+  function closeProductDetail() {
+    const detailSection = document.getElementById('product-detail');
+    detailSection.classList.add('hidden');
+  }
+</script>
